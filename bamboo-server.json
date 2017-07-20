@@ -18,7 +18,8 @@
             "type": "powershell",
             "scripts": [
                 "./EC2Config.ps1",
-                "./BundleConfig.ps1"
+                "./BundleConfig.ps1",
+                "./SetUpDevTools.ps1"
             ]
         }
     ]
