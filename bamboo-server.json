@@ -6,7 +6,7 @@
             "region": "eu-west-1",
             "instance_type": "t2.micro",
             "ami_name": "packer {{timestamp}}",
-            "user_data_file": "./SetUpWinRM.ps1",
+            "user_data_file": "./scripts/SetUpWinRM.ps1",
             "communicator": "winrm",
             "winrm_username": "Administrator",
             "winrm_use_ssl": true,
@@ -17,9 +17,9 @@
         {
             "type": "powershell",
             "scripts": [
-                "./EC2Config.ps1",
-                "./BundleConfig.ps1",
-                "./SetUpDevTools.ps1"
+                "./scripts/EC2Config.ps1",
+                "./scripts/BundleConfig.ps1",
+                "./scripts/SetUpDevTools.ps1"
             ]
         }
     ]
