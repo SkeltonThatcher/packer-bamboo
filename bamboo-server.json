@@ -35,8 +35,8 @@
         },
         {
             "type": "powershell",
-            "scripts": [
-                "./scripts/ExecutePester.ps1"
+            "inline": [
+                "Invoke-Pester C:/Windows/Temp/* -OutputFile TestResults.xml -OutputFormat NUnitXml"
             ]
         },
         {
