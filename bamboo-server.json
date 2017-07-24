@@ -27,6 +27,23 @@
             "inline": [
                 "choco install Pester -y"
             ]
+        },
+        {
+            "type": "file",
+            "source": "tests",
+            "destination": "C:/Windows/Temp"
+        },
+        {
+            "type": "powershell",
+            "scripts": [
+                "./scripts/ExecutePester.ps1"
+            ]
+        },
+        {
+            "type": "file",
+            "source": "TestResults.xml",
+            "destination": "TestResults.xml",
+            "direction": "download"
         }
     ]
 }
