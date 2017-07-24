@@ -21,6 +21,13 @@
                 "./scripts/BundleConfig.ps1",
                 "./scripts/SetUpDevTools.ps1"
             ]
+        },
+        {
+            "type": "powershell",
+            "inline": [
+                "choco install pester",
+                "Invoke-Pester ./tests/*"
+            ]
         }
     ]
 }
