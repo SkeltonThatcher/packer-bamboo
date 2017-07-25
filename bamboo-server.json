@@ -24,13 +24,17 @@
         },
         {
             "type": "powershell",
+            "script": "./scripts/InstallBambooServer.ps1"
+        },
+        {
+            "type": "powershell",
             "inline": [
                 "choco install Pester -y"
             ]
         },
         {
             "type": "file",
-            "source": "tests",
+            "source": "./tests",
             "destination": "C:/Windows/Temp"
         },
         {
