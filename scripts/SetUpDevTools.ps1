@@ -5,3 +5,6 @@ choco feature enable -n allowGlobalConfirmation
 
 # Install .net 4.5.2
 choco install netfx-4.5.2-devpack
+
+# Install Pester to run server tests
+choco install Pester

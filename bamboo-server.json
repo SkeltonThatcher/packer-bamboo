@@ -19,17 +19,8 @@
             "scripts": [
                 "./scripts/EC2Config.ps1",
                 "./scripts/BundleConfig.ps1",
-                "./scripts/SetUpDevTools.ps1"
-            ]
-        },
-        {
-            "type": "powershell",
-            "script": "./scripts/InstallBambooServer.ps1"
-        },
-        {
-            "type": "powershell",
-            "inline": [
-                "choco install Pester -y"
+                "./scripts/SetUpDevTools.ps1",
+                "./scripts/InstallBambooServer.ps1"
             ]
         },
         {
@@ -39,9 +30,7 @@
         },
         {
             "type": "powershell",
-            "inline": [
-                "Invoke-Pester C:/Windows/Temp/* -OutputFile TestResults.xml -OutputFormat NUnitXml"
-            ]
+            "script": "./scripts/RunTests.ps1"
         },
         {
             "type": "file",
