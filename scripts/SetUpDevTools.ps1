@@ -6,5 +6,11 @@ choco feature enable -n allowGlobalConfirmation
 # Install .net 4.5.2
 choco install netfx-4.5.2-devpack
 
+# Install build tools 2015
+choco install microsoft-build-tools --version 14.0.25420.1
+
+# Install JDK 8 for Bamboo
+choco install jdk8
+
 # Install Pester to run server tests
 choco install Pester
