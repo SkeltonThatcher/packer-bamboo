@@ -14,3 +14,8 @@ Start-Process C:\Windows\Temp\atlassian-bamboo-6.1.0-windows-x64.exe -ArgumentLi
 # Set to automatic run & start it
 Set-Service Bamboo -startuptype "Automatic"
 Start-Service Bamboo
+
+Write-Host "Adding firewall rule for Bamboo if not present"
+If (!(Get-NetFirewallRule -Name "Bamboo Server")) {
+    New-NetFirewallRule -Name "Bamboo Server" -Description "Exposes the default port 8085 for Bamboo Server" -DisplayName "Bamboo Server" -Enabled:True -Profile Public -Direction Inbound -Action Allow -Protocol TCP -LocalPort 8085
+}
