@@ -2,7 +2,7 @@
     "builders": [
         {
             "type": "amazon-ebs",
-            "source_ami": "ami-6ab6a80c",
+            "source_ami": "ami-d3dee9b5",
             "region": "eu-west-1",
             "instance_type": "t2.micro",
             "ami_name": "packer {{timestamp}}",
