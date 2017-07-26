@@ -13,5 +13,6 @@
 1. Go make a cup of coffee
 1. Once finished, check the output for successful test results.
 1. Your AMI is now ready to launch
+1. Once launched navigate to `http:\\<instanceip>:8085 to complete the [Bamboo setup wizard](https://confluence.atlassian.com/bamboo/running-the-setup-wizard-289276851.html)
 
 **Note:** The Bamboo Server is set up as a service but does not have logon credentials.  These will need to be set once the Administrator password is known after you've launched your instance.  Follow these [instructions for running Bamboo as a Service](https://confluence.atlassian.com/bamkb/running-bamboo-as-a-windows-service-troubleshooting-guide-420973231.html).
