@@ -5,7 +5,7 @@
             "source_ami": "ami-d3dee9b5",
             "region": "eu-west-1",
             "instance_type": "t2.micro",
-            "ami_name": "packer {{timestamp}}",
+            "ami_name": "Bamboo Server 6.1 {{timestamp}}",
             "user_data_file": "./scripts/SetUpWinRM.ps1",
             "communicator": "winrm",
             "winrm_username": "Administrator",
@@ -37,6 +37,11 @@
             "source": "TestResults.xml",
             "destination": "TestResults.xml",
             "direction": "download"
+        }
+    ],
+    "post-processors": [
+        {
+            "type": "manifest"
         }
     ]
 }
