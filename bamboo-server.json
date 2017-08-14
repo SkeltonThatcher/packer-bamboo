@@ -2,7 +2,7 @@
     "builders": [
         {
             "type": "amazon-ebs",
-            "source_ami": "ami-d3dee9b5",
+            "source_ami": "ami-7cb35e05",
             "region": "eu-west-1",
             "instance_type": "t2.micro",
             "ami_name": "Bamboo Server 6.1 {{timestamp}}",
