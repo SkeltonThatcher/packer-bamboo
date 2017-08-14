@@ -6,7 +6,7 @@
 
 ## Usage Instructions
 
-1. Ensure your aws credentials have been configured.  These scripts expect to use [Automatic Lookup](https://www.packer.io/docs/builders/amazon.html#specifying-amazon-credentials).
+1. Ensure your aws credentials have been configured.  These scripts expect to use [Automatic Lookup](https://www.packer.io/docs/builders/amazon.html#specifying-amazon-credentials).  To use a profile other than default, set the env variable `AWS_PROFILE` to the profile name.
 1. Clone or download this repo
 1. In the repo folder run 
     packer build bamboo-server.json
