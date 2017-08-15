@@ -12,5 +12,9 @@ choco install microsoft-build-tools --version 14.0.25420.1
 # Install JDK 8 for Bamboo
 choco install jdk8
 
+choco install nuget.commandline
+choco install nunit-console-runner
+choco install git
+
 # Install Pester to run server tests
 choco install Pester
