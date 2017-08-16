@@ -14,6 +14,8 @@ choco install jdk8
 
 choco install nuget.commandline
 choco install nunit-console-runner
+# Extension for generating results readable by Bamboo
+choco install nunit-extension-nunit-v2-result-writer
 choco install git
 
 # Install Pester to run server tests
