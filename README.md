@@ -1,5 +1,5 @@
 # Packer AMI build for Bamboo 6 on Win 2012 R2 & .Net 4.5.2
-This script creates an AMI with Bamboo 6 and tools required to build .net 4.5.2 applications on a local Agent.  This will enable you to satisfy the requirements for the requirements for the Starter Licence and so should only be used for demo/experimentation purposes.  
+This script creates an AMI with Bamboo 6 and tools required to build .net 4.5.2 applications on a local Agent.  This will enable you to satisfy the requirements for the requirements for the [Starter Licence](https://www.atlassian.com/licensing/bamboo) and so should only be used for demo/experimentation purposes.  
 For a full licence I'd suggest only using Packer to build the remote agent AMIs for use as Elastic Cloud agents.  The server itself can then be whichever operating system you like and can be managed with config tools such as Ansible.
 
 ## Requirements
@@ -11,7 +11,9 @@ For a full licence I'd suggest only using Packer to build the remote agent AMIs 
 1. Ensure your aws credentials have been configured.  These scripts expect to use [Automatic Lookup](https://www.packer.io/docs/builders/amazon.html#specifying-amazon-credentials).  To use a profile other than default, set the env variable `AWS_PROFILE` to the profile name.
 1. Clone or download this repo
 1. In the repo folder run 
+    ```
     packer build bamboo-server.json
+    ```
 1. Go make a cup of coffee
 1. Once finished, check the output for successful test results.
 1. Your AMI is now ready to launch
